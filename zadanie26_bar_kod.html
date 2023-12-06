@@ -1,0 +1,75 @@
+<html>
+  <head>
+	<script type="text/javascript">
+	function okno_zamknij()
+	{
+	window.close()
+	}
+	</script>
+  </head>
+<body>
+ <form>
+    
+  <textarea name="barkowski" cols="100" rows="40" readonly>
+
+    <html>
+        <head>
+           <script language="JavaScript">
+    
+           function Obw_barkowski(gornaPodstawa, dolnaPodstawa, wysokosc)
+           {
+                gornaPodstawa_bar = parseFloat(gornaPodstawa)
+                dolnaPodstawa_bar = parseFloat(dolnaPodstawa);
+                wysokosc_bar = parseFloat(wysokosc);
+    
+               obwod_bar = gornaPodstawa_bar + dolnaPodstawa_bar + (2 * Math.sqrt(Math.pow((gornaPodstawa_bar - dolnaPodstawa_bar) / 2, 2) + Math.pow(wysokosc_bar , 2)));
+               document.getElementsByName('obwody')[0].value=obwod_bar.toFixed(2);
+    
+               
+            }
+           
+           function Pow_barkowski(gornaPodstawa, dolnaPodstawa, wysokosc)
+           {
+                gornaPodstawa_bar = parseFloat(gornaPodstawa);
+                dolnaPodstawa_bar = parseFloat(dolnaPodstawa);
+                wysokosc_bar = parseFloat(wysokosc);
+    
+                pole_bar = ((gornaPodstawa_bar + dolnaPodstawa_bar) * wysokosc_bar) / 2;
+               document.getElementsByName('pola')[0].value=pole_bar.toFixed(2);
+               
+           }
+           
+           </script>
+         </head>
+        <body>
+            <form name="formularz" action="..." onsubmit="Obw_barkowski(this.gornaPodstawa.value, this.dolnaPodstawa.value, this.wysokosc.value); Pow_barkowski(this.gornaPodstawa.value, this.dolnaPodstawa.value, this.wysokosc.value); return false">
+               podaj gorna podstawe =
+            <input size="6" name="gornaPodstawa">
+                podaj dolna podstawe = 
+            <input size="6" name="dolnaPodstawa">
+                podaj wysokosc = 
+            <input size="6" name="wysokosc">
+            <br> <br>
+            <input type="submit" value="oblicz" >
+            <br> <br>
+                obwod=
+            <input size="6" name="obwody">
+                Pole=
+            <input size="6" name="pola">
+                </form>
+    
+            </body>
+           </html>
+
+
+
+
+
+  </textarea>
+    <form>
+	<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+	<script type="text/javascript">
+  </script>
+
+ </body>
+</html>

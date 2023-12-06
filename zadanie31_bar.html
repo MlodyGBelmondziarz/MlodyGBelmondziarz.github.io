@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        var samochod = {
+            marka: 'lada',
+            rok: '1966',
+            miejsce: 'blok wschodni',
+            pokaz_barkowski: function () {
+                document.write(this.marka + ' ' + this.rok + ' ' + this.miejsce)
+            }
+        }
+        samochod.pokaz_barkowski();
+        samochod.stan = "oplakany";
+        samochod.wypisz_barkowski = function () { alert('stan: ' + this.stan + '') }
+        samochod.wypisz_barkowski();
+    </script>
+</head>
+
+<body>
+    <br>
+    samochod
+</body>
+
+</html>

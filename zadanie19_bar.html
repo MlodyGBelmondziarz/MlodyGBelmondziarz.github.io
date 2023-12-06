@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styl.css">
+  </head>
+ <body>
+    <script type="text/javascript">
+
+function pole_barkowski()
+{
+var a_bar = parseFloat(document.getElementById('dlugosc').value);
+var b_bar = a_bar * a_bar;
+document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_bar.toFixed(2)+" cm^2";
+}
+function obwod_barkowski()
+{
+var a_bar = parseFloat(document.getElementById('dlugosc').value);
+var b_bar = 4 * a_bar;
+document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_bar.toFixed(2)+" cm";
+}
+
+    </script>
+    <h1>Wszystko o KWADRACIE</h1><br><br>
+    Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> <br><br><br>
+
+    <input type="button" name="pole" value="Oblicz pole" Onclick="pole_barkowski()"><br><br>
+    <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_barkowski()"><br><br>
+
+    <div style="color:red;font-size:50px;"id="nazwa"></div>
+ </body>
+</html>

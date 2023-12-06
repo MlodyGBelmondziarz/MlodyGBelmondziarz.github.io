@@ -1,0 +1,69 @@
+<html>
+  <head>
+	<script type="text/javascript">
+	function okno_zamknij()
+	{
+	window.close()
+	}
+	</script>
+  </head>
+<body>
+ <form>
+  <textarea name="barkowski" cols="85" rows="40" readonly>
+  
+    <!DOCTYPE html>
+    <head>
+      <title> Użycie fukcji </title>
+      <meta charset="utf-8">
+    </head>
+   <body>
+      <div style="color:navy;font-size:50px;">
+      <script language="JavaScript">
+  
+  var a=parseFloat(prompt("a=",""));
+  var b=parseFloat(prompt("b=",""));
+  
+  function suma_bar(a, b) 
+  {
+      return a + b;
+  }
+  
+  function odejmowanie_bar(a, b)
+  {
+      return a - b;
+  }
+  
+  function mnozenie_bar(a, b)
+  {
+      return a * b;
+  }
+  
+  function od_kwadratu_bar(a, b)
+  {
+      return a * a, b * b;
+  }
+  
+  
+  function reszta_z_dzielenia_a_przez_b_bar(a, b)
+  {
+      return a % b;
+  }
+  
+      document.write("suma: "+suma_bar(a,b)+"<br>");
+      document.write("roznica: "+odejmowanie_bar(a,b)+"<br>");
+      document.write("iloczyn: "+mnozenie_bar(a,b)+"<br>");
+      document.write("kwadrat: "+a+" ^2 = "+od_kwadratu_bar(b, a)+"<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+b+" ^2 = "+od_kwadratu_bar(a, b)+"<br>");
+      document.write("reszta: "+reszta_z_dzielenia_a_przez_b_bar(a,b)+"<br>");
+  
+  
+      </script>
+      </div>
+   </body>
+  </html>
+</textarea>
+ <form>
+	<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+	<script type="text/javascript">
+  </script>
+ </body>
+</html>

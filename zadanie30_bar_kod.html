@@ -1,0 +1,43 @@
+<html>
+  <head>
+	<script type="text/javascript">
+	function okno_zamknij()
+	{
+	window.close()
+	}
+	</script>
+  </head>
+<body>
+ <form>
+
+  <textarea name="barkowski" cols="100" rows="40" readonly>
+    <html>
+<head>
+    <script type="text/javascript">
+        var samochod = {
+            marka: 'lada',
+            rok: '1966',
+            miejsce: 'blok wschodni',
+            samochod_wyswietl_barkowski: function () {
+                document.write(this.marka + ' ' + this.rok + ' ' + this.miejsce);
+            }
+        }
+        samochod.samochod_wyswietl_barkowski();
+    </script>
+</head>
+
+<body>
+    <br>
+    samochod
+</body>
+
+</html>
+    </textarea>
+	  <form>
+	<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+	<script type="text/javascript">
+  </script>
+</body>
+</html>
+
+ 

@@ -1,0 +1,61 @@
+<html>
+ <head>
+    <script language="JavaScript">
+    function AB_bar()
+    {
+        var xa_bar = parseFloat(document.getElementById('xa').value);
+        var ya_bar = parseFloat(document.getElementById('ya').value);
+
+        var xb_bar = parseFloat(document.getElementById('xb').value);
+        var yb_bar = parseFloat(document.getElementById('yb').value);
+
+        var wyn_bar = Math.sqrt(Math.pow((xa_bar - xb_bar),2)+ Math.pow((ya_bar - yb_bar),2));
+
+        document.getElementById("nazwa").innerHTML = "Dlugosc boku AB = "+wyn_bar.toFixed(2)+" cm";
+    }
+    
+    function BC_bar()
+    {
+        var xb_bar = parseFloat(document.getElementById('xb').value);
+        var yb_bar = parseFloat(document.getElementById('yb').value);
+
+        var xc_bar = parseFloat(document.getElementById('xc').value);
+        var yc_bar = parseFloat(document.getElementById('yc').value);
+
+        var wyn_bar = Math.sqrt(Math.pow((xb_bar - xc_bar),2)+ Math.pow((yb_bar - yc_bar),2));
+
+        document.getElementById("nazwa").innerHTML = "Dlugosc boku BC = "+wyn_bar.toFixed(2)+" cm";
+    }
+    
+    function AC_bar()
+    {
+        var xc_bar = parseFloat(document.getElementById('xc').value);
+        var yc_bar = parseFloat(document.getElementById('yc').value);
+
+        var xa_bar = parseFloat(document.getElementById('xa').value);
+        var ya_bar = parseFloat(document.getElementById('ya').value);
+
+        var wyn_bar = Math.sqrt(Math.pow((xa_bar - xc_bar),2)+ Math.pow((ya_bar - yc_bar),2));
+
+        document.getElementById("nazwa").innerHTML = "Dlugosc boku AC = "+wyn_bar.toFixed(2)+" cm";
+    }
+    </script>
+  </head>
+ <body>
+    <br><br>
+Podaj x punktu A: <input type = "text" id = "xa" value = ""><br><br>
+Podaj y punktu A: <input type = "text" id = "ya" value = ""><br><br> 
+Podaj x punktu B: <input type = "text" id = "xb" value = ""><br><br>
+Podaj y punktu B: <input type = "text" id = "yb" value = ""><br><br>
+Podaj x punktu C: <input type = "text" id = "xc" value = ""><br><br> 
+Podaj y punktu C: <input type = "text" id = "yc" value = ""><br><br>
+
+<input type = "button" name = "xd" value = "dlugosc miedzy a i b" onclick="AB_bar()"><br>
+<input type = "button" name = "xd" value = "dlugosc miedzy b i c" onclick="BC_bar()"><br>
+<input type = "button" name = "xd" value = "dlugosc miedzy a i c" onclick="AC_bar()"><br>
+
+
+<div style="color:red;font-size:50px;"id="nazwa"></div>
+
+ </body>
+</html>

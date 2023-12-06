@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+   <head> 
+     <title></title> 
+     <meta charset="utf-8"> 
+   </head> 
+  <body>
+   <div style="color:blue;font-size:47px;">
+    <script>
+     
+     var No_bar = prompt("No=","");
+     var No = parseFloat(No_bar);
+
+     var t_bar = prompt("T=","");
+     var t = parseFloat(t_bar);
+
+     var T12_bar = prompt("T1/2=", "");
+     var T12 = parseFloat(T12_bar);
+
+    var lambda = Math.log(2) / T12;
+    var N = No *  Math.pow(Math.E , ((-1 * lambda) * t)); 
+
+
+     document.write("No= "+No+"[sztuk]");
+     document.write("<br>");
+     document.write("t= "+t+"[lat]");
+     document.write("<br>");
+     document.write("T1/2="+T12+"[lat]");
+     document.write("<br>");
+     document.write("Lambda= "+lambda.toFixed(7)+"[1/rok]");
+     document.write("<br>");
+     document.write("N= "+N.toFixed(7)+"[sztuk]");
+
+     /* Barkowski */
+
+    </script>
+   </div>
+  </body>
+ </html>
+ 
+  
+  

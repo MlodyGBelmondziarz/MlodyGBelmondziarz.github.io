@@ -1,0 +1,52 @@
+<html>
+  <head>
+	<script type="text/javascript">
+	function okno_zamknij()
+	{
+	window.close()
+	}
+	</script>
+  </head>
+<body>
+ <form>
+  <textarea name="barkowski" cols="100" rows="40" readonly>
+    <html>
+
+    <head>
+        <script type="text/javascript">
+            function samochod(marka_b, rok_b, miejsce_b, stan_b)
+            {
+                this.marka = marka_b;
+                this.rok = rok_b;
+                this.miejsce = miejsce_b;
+                this.stan = stan_b
+            }
+            samochod.prototype.wypisz_barkowski = function () 
+            {
+                alert(this.marka + ' ' + this.rok + ' ' + this.miejsce + ' ' + this.stan);
+            };
+            var samochod1 = new samochod("lada", "1966", "blok wschodni", "oplakany"); ś
+            var samochod2 = new samochod("merc", "2007", "germania", "do przyjecia");
+            var samochod3 = new samochod("golfo", "1993", "RFN", "sredni");
+            samochod1.wypisz_barkowski(); 
+            samochod2.wypisz_barkowski();
+            samochod3.wypisz_barkowski();
+            document.write("<br> samochod pierwszy " + " " + samochod1.marka + " " + samochod1.rok + " " + samochod1.miejsce + " " + samochod1.stan);
+            document.write("<br> samochod drugi " + " " + samochod2.marka + " " + samochod2.rok + " " + samochod2.miejsce + " " + samochod2.stan);
+            document.write("<br> samochod trzeci " + " " + samochod3.marka + " " + samochod3.rok + " " + samochod3.miejsce + " " + samochod3.stan);
+        </script>
+    </head>
+    <body>
+    </body>
+    
+    </html>
+
+
+  </textarea>
+  <form>
+	<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+	<script type="text/javascript">
+  </script>
+
+ </body>
+</html>

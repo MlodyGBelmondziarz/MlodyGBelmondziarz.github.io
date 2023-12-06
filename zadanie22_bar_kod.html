@@ -1,0 +1,70 @@
+<html>
+  <head>
+	<script type="text/javascript">
+	function okno_zamknij()
+	{
+	window.close()
+	}
+	</script>
+  </head>
+<body>
+ <form>
+  <textarea name="barkowski" cols="100" rows="40" readonly>
+    <html>
+ <head>
+    <title>
+    Przykład obliczenia pola i obwodu prostokata
+    </title>
+<script language="JavaScript">
+    
+function p(a,b)
+{
+a_bar=parseFloat(a)
+b_bar=parseFloat(b)
+p_wynik = a_bar * b_bar
+document.getElementsByName('pol')[0].value=p_wynik.toFixed(2); /* na dokument */
+alert("pole="+p_wynik.toFixed(2)+" cm^3");
+pokaz1.innerHTML="pole="+p_wynik.toFixed(2)+" cm^3"+"<br>"; /* do tabeli */
+}
+function o(a,b)
+{
+a_bar=parseFloat(a)
+b_bar=parseFloat(b)
+o_wynik = 2*a_bar + 2*b_bar
+document.getElementsByName('obw')[0].value=o_wynik.toFixed(2);
+alert("obwod="+o_wynik.toFixed(2)+" cm^2");
+pokaz2.innerHTML="obwod="+o_wynik.toFixed(2)+"cm^2";
+}
+</script>
+  </head>
+ <body>
+Obliczanie obwodu i pola prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="p(this.a_bar.value,this.b_bar.value); o(this.a_bar.value,this.b_bar.value);return false">
+    Podaj a=
+<input size="6" name="a_bar">
+    Podaj b=
+<input size="6" name="b_bar">
+<br> <br>
+<input TYPE="submit" Value="oblicz" >
+<br> <br>
+    pole=
+<input size="6" name="pol">
+    obwod=
+<input size="6" name="obw">
+    </form>
+    <table>
+        <tr id="pokaz1"></tr>
+        <tr id="pokaz2"></tr>
+    </table>
+ </body>
+</html>
+
+  </textarea>
+  <form>
+	<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+	<script type="text/javascript">
+  </script>
+
+ </body>
+</html>

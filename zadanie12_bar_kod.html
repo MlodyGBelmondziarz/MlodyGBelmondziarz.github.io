@@ -1,0 +1,48 @@
+<html>
+  <head>
+	<script type="text/javascript">
+	function okno_zamknij()
+	{
+	window.close()
+	}
+	</script>
+  </head>
+<body>
+ <form>
+  <textarea name="barkowski" cols="70" rows="32" readonly>
+  <!DOCTYPE html> 
+  <head> 
+	<meta charset="utf-8"> 
+  </head> 
+ <body>
+  <div style="color:green;font-size:46px;">
+   <script language="JavaScript">
+	
+
+	var D1_bar=prompt("D1_bar=","");
+	var G1_bar=prompt("G1_bar=","");
+	var D2_bar=prompt("D2_bar=","");
+	var G2_bar=prompt("G2_bar=","");
+	
+	var sekund;
+	
+	var a=parseFloat(D1_bar);
+	var b=parseFloat(G1_bar);
+	var c=parseFloat(D2_bar);
+	var d=parseFloat(G2_bar);
+	
+	var sekund = (a - c)* 86400 + (b - d)*3600;
+
+	
+	document.write("ilość sekund= "+sekund+" sekund <br>");
+   </script>
+  </div>
+ </body>
+</html>
+   </textarea>
+ <form>
+	<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+	<script type="text/javascript">
+  </script>
+ </body>
+</html>
